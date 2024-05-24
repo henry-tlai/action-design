@@ -62,7 +62,69 @@ nav ul li a:hover::after{ /* creates an effect when you hover over the links but
 .header-text h1 span{
     color: #b3d6f9;
 }
-
+/* ---carousel--- */
+.gallery{
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+.gallery h1{
+    color: #223A59;
+    font-size: 65px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.gallery i{
+    background: white;
+    color: black;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery:hover i {
+    /* Show the arrows when hovering over the gallery */
+    opacity: 1;
+}
+.gallery i:first-child{
+    left: 5px;
+}
+.gallery i:last-child{
+    right: 5px;
+}
+.gallery .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 400px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 14px;
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
 /* ---about--- */
 #about{
     padding: 80px 0;
