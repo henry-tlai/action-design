@@ -1,1 +1,2 @@
 # action-design
+This website is dedicated to my father's graphic design business. Located in Seattle, Washington. He has been in the graphic designing industry for decades and has accumulated many accolades and products for a variety of business ranging from small local businesses to large corporate industries such as SpaceX. I want this site to become his business card but also a source to represent his hard-work.
