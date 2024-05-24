@@ -1,0 +1,150 @@
+*{ /* resetter, applies to all elements on a webpage */
+    margin: 0;
+    padding: 0;
+    font-family: "Asap Condensed", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+.container{
+    padding: 10px 10%; /* 10px from top and bottom but 10% from the left and right side */
+}
+.row{
+    display: flex; /* side by side content */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #b3d6f9;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #b3d6f9;
+}
+/* Header */
+body{
+    background-color: black;
+}
+.container{
+    padding: 10px 10%; /* 10px from top and bottom but 10% from the left and right side */
+}
+nav{
+    display: flex; /* so the image and links will be side by side */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{ /* structures the navbar */
+    display: inline-block; /* so the nav bar is horizontally aligned */
+    list-style: none; /* removes the bullets */
+    margin: 10px 20px; /* space between each link */
+}
+nav ul li a{ /* alters the style of the links */
+    color: white;
+    text-decoration: none; /* removes the underline */
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{ /* creates an underline under the links on the navbar */
+    content: '';
+    width: 0; /*this needs to be 0 if we want to consider the underline to have this slider effect */
+    height: 3px;
+    background: #b3d6f9;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{ /* creates an effect when you hover over the links but alters the underline */
+    width: 100%; 
+}
+/* ---Contact--- */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #b3d6f9;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons {
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/* Update this selector to target Font Awesome icons */
+.social-icons a i {
+    color: white; /* Set the color for Font Awesome icons */
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover i {
+    color: #b3d6f9; /* Change the color on hover for Font Awesome icons */
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #b3d6f9;
+}
+.content-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    bottom: 0;
+    left: 0; /* Ensures it's aligned with the left edge of the screen */
+    z-index: 999; /* Ensures it's on top of other content */
+}
+.copyright p {
+    margin: 0; /* Remove default margin */
+}
+.copyright i {
+    color: #b3d6f9;
+}

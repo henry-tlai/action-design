@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Asap Condensed", sans-serif;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+/* Header */
+body{
+    background-color: black;
+}
+.container{
+    padding: 10px 10%; /* 10px from top and bottom but 10% from the left and right side */
+}
+nav{
+    display: flex; /* so the image and links will be side by side */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{ /* structures the navbar */
+    display: inline-block; /* so the nav bar is horizontally aligned */
+    list-style: none; /* removes the bullets */
+    margin: 10px 20px; /* space between each link */
+}
+nav ul li a{ /* alters the style of the links */
+    color: white;
+    text-decoration: none; /* removes the underline */
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{ /* creates an underline under the links on the navbar */
+    content: '';
+    width: 0; /*this needs to be 0 if we want to consider the underline to have this slider effect */
+    height: 3px;
+    background: #b3d6f9;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{ /* creates an effect when you hover over the links but alters the underline */
+    width: 100%; 
+}
+
+/* Gallery */
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img{
+    width: 90%;
+    max-width: 500px;   
+}
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.88);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+}
+/* footer */
+.copyright {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    bottom: 0;
+    left: 0; /* Ensures it's aligned with the left edge of the screen */
+    z-index: 999; /* Ensures it's on top of other content */
+}
+.copyright p {
+    margin: 0; /* Remove default margin */
+}
+.copyright i {
+    color: #b3d6f9;
+}

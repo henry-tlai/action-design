@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/21c13be224.js" crossorigin="anonymous"></script> <!--Imported link to fontawesome to have access to the icons-->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <!--nav bar-->
+            <nav>
+                <!--logo-->
+                <i class="fa-solid fa-crown"></i><!--<img src="" alt="Action Design" class="logo">-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" onclick="scrollToAbout()">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#" onclick="scrollToServices()">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Seattle's Best Graphic Artist</p>
+                <h1><span>Peter Lai</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- ----about---- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../img/happy.jpg" alt="photo of dad">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>With decades of experience in the graphic design field, we have witnessed the dramatic transition from traditional techniques to the digital era, mastering everything from hand-drawing to sophisticated software like Adobe Photoshop and Illustrator. This extensive background has equipped us with deep insights into visual trends, branding, and consumer behavior, enabling us to produce powerful and creative designs that effectively address the changing demands of our clients. As we keep pace with emerging technologies and trends, our dedication to delivering state-of-the-art designs that connect with contemporary audiences remains unwavering.</p>
+                       <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Skill 1</span><br>Description</li>
+                            <li><span>Skill 2</span><br>Description</li>
+                            <li><span>Skill 3</span><br>Description</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Experience 1</span><br>Description</li>
+                            <li><span>Experience 2</span><br>Description</li>
+                            <li><span>Experience 3</span><br>Description</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Education 1</span><br>Description</li>
+                            <li><span>Education 2</span><br>Description</li>
+                            <li><span>Education 3</span><br>Description</li>
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---services--- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i> <!--Imported icon from fontawesome-->
+                <h2>Service 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                    occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Service 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                    occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Service 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                    occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---footer--- -->
+<div class="copyright">
+    <p><span class="copyright">&copy;</span>Copyright</p>
+</div>
+<!-- ---JavaScript--- -->
+<script>
+    // about me
+    function scrollToAbout() {
+    var aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+	window.addEventListener("DOMContentLoaded", function() {
+        console.log("DOMContentLoaded event fired");
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('scrollTo') && urlParams.get('scrollTo') === 'about') {
+            console.log("Scrolling to about section");
+            var about = document.getElementById("about");
+            console.log("About section:", aboutSection);
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+    // services
+    function scrollToServices() {
+        var servicesSection = document.getElementById("services");
+        servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    window.addEventListener("DOMContentLoaded", function() {
+        console.log("DOMContentLoaded event fired");
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('scrollTo') && urlParams.get('scrollTo') === 'services') {
+            console.log("Scrolling to services section");
+            var servicesSection = document.getElementById("services");
+            console.log("Services section:", servicesSection);
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+    // We are creating a variable that's linked to the class tab-links
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){ 
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
